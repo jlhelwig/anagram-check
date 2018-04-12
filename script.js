@@ -9,6 +9,12 @@ let done=aide.split('');
 let node=idea.split('');
 // check it out
 console.log(done,node);
+    if (done.sort().join('')===node.sort().join('')){
+      return console.log('its an anagram!')
+    }
+
+    return console.log('nope!');
 }
 
-myFunction('notes', 'snotes');
+myFunction('notes', 'snotes');//not!
+myFunction('ides','side'); //it's an ana!
