@@ -4,17 +4,15 @@
 
 
 function myFunction(aide,idea){
-//first sort them, then compare them... first make them an array
 let done=aide.split('');
 let node=idea.split('');
-// check it out
-console.log(done,node);
-    if (done.sort().join('')===node.sort().join('')){
-      return console.log('its an anagram!')
-    }
-
-    return console.log('nope!');
+  if (done.sort().join('')===node.sort().join('')){
+    return console.log(aide +' is an an anagram of ' +idea)
+  }
+  return console.log(aide +' is not an an anagram of ' +idea);
 }
+
+
 
 myFunction('notes', 'snotes');//not!
 myFunction('ides','side'); //it's an ana!
