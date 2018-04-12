@@ -4,12 +4,10 @@
 
 
 function myFunction(aide,idea){
-let done=aide.split('');
-let node=idea.split('');
-  if (done.sort().join('')===node.sort().join('')){
+  if (aide.split('').sort().join('')===idea.split('').sort().join('')){
     return console.log(aide +' is an an anagram of ' +idea)
   }
-  return console.log(aide +' is not an an anagram of ' +idea);
+    return console.log(aide +' is not an an anagram of ' +idea);
 }
 
 
